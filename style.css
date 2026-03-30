@@ -311,3 +311,72 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* ===== CENTRALIZA TUDO ===== */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ===== NOME (MENOR + NEON PULSE) ===== */
+.name {
+  font-size: 36px; /* menor */
+  color: #00ffcc;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  text-shadow: 
+    0 0 5px #00ffcc,
+    0 0 10px #00ffcc;
+
+  animation: glowPulse 2s infinite alternate;
+}
+
+/* ANIMAÇÃO DO NEON */
+@keyframes glowPulse {
+  from {
+    text-shadow: 
+      0 0 5px #00ffcc,
+      0 0 10px #00ffcc;
+  }
+  to {
+    text-shadow: 
+      0 0 20px #00ffcc,
+      0 0 40px #00ffcc,
+      0 0 60px #00ffcc;
+  }
+}
+
+/* ===== TYPING CENTRALIZADO ===== */
+.typing {
+  font-size: 18px;
+  color: #00ffcc;
+  margin-top: 10px;
+
+  display: inline-block;
+
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #00ffcc;
+
+  width: 0;
+
+  animation: typing 3s steps(22, end) 1s forwards, blink 0.7s infinite;
+}
+
+/* DIGITAÇÃO */
+@keyframes typing {
+  to {
+    width: 240px;
+  }
+}
+
+/* CURSOR */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
