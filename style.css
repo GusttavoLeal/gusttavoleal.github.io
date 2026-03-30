@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -139,13 +140,14 @@ h2 {
     filter: drop-shadow(0 0 8px currentColor);
 }
 
-/* ===== BOTÕES (UPGRADE) ===== */
+/* ===== BOTÕES PREMIUM ===== */
 
 .skills-actions {
-    margin-top: 35px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    align-items: center;
+    gap: 18px;
 }
 
 /* BASE */
@@ -155,69 +157,93 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.3s ease;
+    transition: all 0.25s ease;
 }
 
-/* RESUME - GLASS + NEON */
+/* RESUME */
 .btn-resume {
-    padding: 10px 22px;
-    border-radius: 12px;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    font-size: 14px;
+    letter-spacing: 0.5px;
 
     color: #00ffcc;
-    border: 1px solid rgba(0, 255, 204, 0.4);
 
-    background: rgba(0, 255, 204, 0.05);
-    backdrop-filter: blur(8px);
+    background: rgba(0, 255, 204, 0.06);
+    border: 1px solid rgba(0, 255, 204, 0.25);
+
+    backdrop-filter: blur(6px);
 
     box-shadow:
-        0 0 10px rgba(0, 255, 204, 0.3),
-        inset 0 0 10px rgba(0, 255, 204, 0.15);
+        0 0 8px rgba(0, 255, 204, 0.2),
+        inset 0 0 6px rgba(0, 255, 204, 0.1);
 
-    font-size: 15px;
-    letter-spacing: 1px;
+    gap: 6px;
 }
 
 .btn-resume i {
-    margin-right: 8px;
+    font-size: 14px;
 }
 
 .btn-resume:hover {
-    transform: translateY(-4px);
-    background: rgba(0, 255, 204, 0.15);
-
+    transform: translateY(-3px);
+    background: rgba(0, 255, 204, 0.12);
     box-shadow:
-        0 0 20px #00ffcc,
-        0 0 40px rgba(0, 255, 204, 0.6);
+        0 0 15px rgba(0, 255, 204, 0.5),
+        0 0 25px rgba(0, 255, 204, 0.2);
 }
 
-/* GITHUB - ÍCONE + TEXTO */
-.btn-github {
-    background: #181717;
-    color: #fff;
-
+/* GITHUB WRAPPER */
+.github-wrapper {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+}
 
-    padding: 12px 18px;
+/* GITHUB BOTÃO */
+.btn-github {
+    width: 44px;
+    height: 44px;
+
+    background: #050505;
     border-radius: 12px;
 
-    min-width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+        0 6px 15px rgba(0,0,0,0.7),
+        inset 0 0 6px rgba(255,255,255,0.04);
 }
 
+/* ÍCONE */
 .btn-github i {
-    font-size: 24px;
-    margin-bottom: 6px;
+    font-size: 22px;
+    color: #ffffff;
 }
 
-.btn-github span {
+/* TEXTO EMBAIXO */
+.github-label {
+    margin-top: 6px;
     font-size: 11px;
     letter-spacing: 1px;
-    opacity: 0.7;
+    color: #00ff88; /* mesma cor do site */
+    transition: 0.25s;
 }
 
-.btn-github:hover {
+/* HOVER */
+.github-wrapper:hover .btn-github {
     transform: translateY(-4px);
-    background: #242424;
-    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    background: #0d0d0d;
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.9),
+        0 0 10px rgba(255,255,255,0.08);
+}
+
+.github-wrapper:hover .github-label {
+    color: #00ffcc; /* leve brilho diferente no hover */
 }
 
 /* PROJECTS */
@@ -426,39 +452,4 @@ header {
   50% {
     border-color: transparent;
   }
-}
-
-.btn-github {
-    width: 48px;
-    height: 48px;
-    padding: 0%;
-    background: #0a0a0a;
-    border-radius: 16px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    box-shadow:
-        0 10px 25px rgba(0,0,0,0.6),
-        inset 0 0 10px rgba(255,255,255,0.05);
-
-    transition: 0.3s ease;
-}
-
-.btn-github i {
-    font-size: 20px;
-    color: #ffffff;
-
-    filter: drop-shadow(0 0 6px rgba(255,255,255,0.3));
-}
-
-/* HOVER MAIS FORTE */
-.github-wrapper:hover .btn-github {
-    transform: translateY(-6px) scale(1.05);
-    background: #242424;
-
-    box-shadow:
-        0 15px 35px rgba(0,0,0,0.8),
-        0 0 25px rgba(255,255,255,0.15);
 }
