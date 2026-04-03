@@ -4,7 +4,7 @@ Welcome to my professional portfolio! This repository showcases my expertise as 
 
 ---
 
-## 🚀 About Me
+##  About Me
 
 I am a passionate Full Stack Developer dedicated to building scalable, high-performance web applications. My approach combines clean code, best practices, and a relentless pursuit of technical excellence. I thrive on solving complex problems, architecting maintainable systems, and delivering real business value through software.
 
@@ -14,7 +14,7 @@ I am a passionate Full Stack Developer dedicated to building scalable, high-perf
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 **Languages:**
 - HTML5, CSS3, JavaScript, TypeScript
@@ -39,19 +39,7 @@ I am a passionate Full Stack Developer dedicated to building scalable, high-perf
 
 ---
 
-## 💼 Featured Projects
-
-### [NoxStride](https://gusttavoleal.github.io/noxstride-ecommerce/)  
-A modern, dark-themed e-commerce website focused on sneakers. Features a realistic online store experience, interactive product gallery, lightbox preview, and a fully responsive layout. Built with HTML, CSS, and JavaScript to highlight advanced UI design and front-end skills.
-- [Live Demo](https://gusttavoleal.github.io/noxstride-ecommerce/) | [Source Code](https://github.com/GusttavoLeal/noxstride-ecommerce)
-
-### [Link Bio Matrix](https://gusttavoleal.github.io/link-in-bio-futuristic/)  
-A futuristic, interactive link-in-bio project inspired by cyberpunk and matrix aesthetics. Combines animated backgrounds, terminal-style interactions, and a highly customizable interface for creators and digital brands.
-- [Live Demo](https://gusttavoleal.github.io/link-in-bio-futuristic/) | [Source Code](https://github.com/GusttavoLeal/link-in-bio-futuristic)
-
----
-
-## ✨ Highlights & Differentials
+##  Highlights & Differentials
 - **Modern UI/UX:** Advanced design with animations, particle backgrounds, and responsive layouts
 - **Scalable Architecture:** Clean, modular codebase ready for growth
 - **Business Focus:** Solutions designed to create real value, not just features
@@ -60,7 +48,7 @@ A futuristic, interactive link-in-bio project inspired by cyberpunk and matrix a
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 - `index.html` — Main portfolio page
 - `main.js` — Interactive features and lightbox/gallery logic
 - `style.css` — Custom styles and responsive design
@@ -70,29 +58,17 @@ A futuristic, interactive link-in-bio project inspired by cyberpunk and matrix a
 
 ---
 
-## 🏁 Getting Started
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/GusttavoLeal/gustavoleal-portfolio.git
-   ```
-2. **Open `index.html` in your browser** to explore the portfolio locally.
-
-> No build step required. All assets are static and ready to use.
-
----
-
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! If you have suggestions, ideas, or want to collaborate, feel free to open an issue or submit a pull request.
 
 ---
 
-## 📫 Contact
+##  Contact
 - [GitHub](https://github.com/GusttavoLeal)
 - [WhatsApp](https://wa.me/5531999460225)
 - [Discord](https://discord.com/users/1204551778981519401)
-- [View Resume (PDF)](imagens/cv/View-Resume_Gustavo_Leal_Mamedio.pdf)
+
 
 ---
 
