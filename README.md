@@ -48,13 +48,48 @@ I am a passionate Full Stack Developer dedicated to building scalable, high-perf
 
 ---
 
-##  Project Structure
-- `index.html` — Main portfolio page
-- `main.js` — Interactive features and lightbox/gallery logic
-- `style.css` — Custom styles and responsive design
-- `particles.js` — Animated background particles
-- `portfolio/` — Detailed project pages and previews
-- `imagens/` — Visual assets (photos, prints, icons, CV)
+## Project Structure
+
+The project follows a modular and organized structure to improve scalability, maintainability, and code readability.
+
+/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── main.js
+│   └── particles.js
+├── portfolio/
+├── imagens/
+└── README.md
+ Architecture Overview
+Root
+index.html — Main entry point of the portfolio. Contains the base layout, sections, and project showcase.
+/css
+style.css — Handles custom styling, layout system, animations, and responsive design (mobile-first approach).
+/js
+main.js — Controls UI interactions, project gallery, lightbox behavior, animations, and DOM manipulation.
+particles.js — Background particle animation for visual enhancement and modern UI feel.
+/portfolio
+Contains Case Study pages for each portfolio project.
+Each case study includes:
+Project overview
+Problem description
+Technologies used
+Development process
+Challenges
+Results / Final solution
+Screenshots
+
+This folder basically works as a project documentation section inside the portfolio.
+
+/imagens
+Stores all visual assets:
+Project screenshots
+Icons
+Profile images
+Resume
+UI assets
 
 ---
 
@@ -72,4 +107,4 @@ Contributions are welcome! If you have suggestions, ideas, or want to collaborat
 
 ---
 
-> **Designed and developed by Gustavo Leal — Full Stack Developer**
+## Engineered and designed by Gustavo Leal — Full Stack Developer.
