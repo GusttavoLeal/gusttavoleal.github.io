@@ -49,12 +49,79 @@ I am a passionate Full Stack Developer dedicated to building scalable, high-perf
 ---
 
 ##  Project Structure
-- `index.html` — Main portfolio page
-- `main.js` — Interactive features and lightbox/gallery logic
-- `style.css` — Custom styles and responsive design
-- `particles.js` — Animated background particles
-- `portfolio/` — Detailed project pages and previews
-- `imagens/` — Visual assets (photos, prints, icons, CV)
+
+The project follows a modular structure focused on organization, scalability, and maintainability.
+
+```
+project-root/
+│
+├── index.html          # Main entry point
+├── README.md           # Project documentation
+│
+├── css/
+│   └── style.css       # Styles, layout, animations, responsive design
+│
+├── js/
+│   ├── main.js         # UI logic, DOM manipulation, gallery, lightbox
+│   └── particles.js    # Background particle animation
+│
+├── portfolio/          # Case study pages for each project
+│
+└── imagens/            # Images, icons, assets, screenshots, resume
+```
+
+---
+
+##  Architecture Overview
+
+### Root
+
+* **index.html** — Main portfolio structure and sections
+* **README.md** — Project documentation
+
+### /css
+
+Contains all styling files:
+
+* Layout
+* Animations
+* Responsive design
+* Mobile-first approach
+
+### /js
+
+Contains all JavaScript logic:
+
+* Interface interactions
+* Project gallery
+* Lightbox
+* Animations
+* DOM manipulation
+* Background particles
+
+### /portfolio
+
+This folder contains detailed case studies for each project, including:
+
+* Project overview
+* Problem description
+* Technologies used
+* Development process
+* Challenges
+* Results / Final solution
+* Screenshots
+
+### /imagens
+
+Stores all visual assets:
+
+* Project screenshots
+* Icons
+* Profile images
+* Resume
+* UI assets
+
+
 
 ---
 
@@ -72,4 +139,4 @@ Contributions are welcome! If you have suggestions, ideas, or want to collaborat
 
 ---
 
-> **Designed and developed by Gustavo Leal — Full Stack Developer**
+## Engineered and designed by Gustavo Leal — Full Stack Developer.
