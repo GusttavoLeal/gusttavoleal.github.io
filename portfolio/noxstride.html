@@ -186,20 +186,20 @@ tsParticles.load("tsparticles", {
 
   particles: {
     number: {
-      value: window.innerWidth < 768 ? 50 : 100,
-      density: { enable: true, area: 800 }
-    },
+  value: window.innerWidth < 768 ? 40 : 80,
+  density: { enable: true, area: 800 }
+},
     color: { value: "#ffffff" },
     shape: { type: "circle" },
     opacity: { value: { min: 0.05, max: 0.25 } },
     size: { value: { min: 0.5, max: 2 } },
     links: {
-      enable: true,
-      distance: 200,
-      color: "#ffffff",
-      opacity: 0.3,
-      width: 1.2
-    },
+  enable: true,
+  distance: 170,
+  color: "#ffffff",
+  opacity: 0.25,
+  width: 1
+},
     move: {
       enable: true,
       speed: 0.15,
@@ -209,19 +209,18 @@ tsParticles.load("tsparticles", {
   },
 
   interactivity: {
-    events: {
-      onHover: {
-        enable: true,
-        mode: ["grab", "connect"]
-      },
-      onClick: {
-        enable: true,
-        mode: ["push"]
-      }
+  events: {
+    onHover: {
+      enable: true,
+      mode: ["grab", "connect"]
+    },
+    onClick: {
+      enable: false // 🚫 AQUI resolve o bug do click
     }
-  },
+  }
+},
 
-  detectRetina: true
+detectRetina: true
 }, function (container) {
   particlesInstance = container;
 });
