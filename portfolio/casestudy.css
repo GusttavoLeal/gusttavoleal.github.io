@@ -195,12 +195,12 @@ body {
    CONTENT SECTIONS
 ========================= */
 .content section {
-    border: 1px solid rgba(255,255,255,0.2);
-    padding: 22px;
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 26px;
     margin-bottom: 20px;
     border-radius: 10px;
 
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(15, 15, 15, 0.6);
     backdrop-filter: blur(6px);
 
     box-shadow: 0 0 10px rgba(255,255,255,0.1);
@@ -217,20 +217,38 @@ body {
 /* TITLES */
 .content h2 {
     font-family: 'Orbitron';
-    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
 
     display: flex;
     align-items: center;
     gap: 10px;
 
-    text-shadow: 0 0 6px #EAEAEA;
+    color: #FFFFFF;
+
+    text-shadow: 0 0 4px rgba(255,255,255,0.25);
 }
 
 /* TEXT */
 .content p {
-    line-height: 1.7;
-    font-size: 16px;
-    color: #EAEAEA;
+    line-height: 1.8;
+    font-size: 15.5px;
+    color: rgba(255,255,255,0.75);
+
+    letter-spacing: 0.3px;
+    font-weight: 400;
+
+    max-width: 65ch;
+}
+
+.content p strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.content p + p {
+    margin-top: 10px;
 }
 
 /* =========================
@@ -281,13 +299,19 @@ body {
    SIDEBAR
 ========================= */
 .sidebar {
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 10px;
-    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 22px;
     height: fit-content;
 
-    background: rgba(0, 0, 0, 0.65);
-    backdrop-filter: blur(6px);
+    background: rgba(15, 15, 15, 0.6);
+    backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 0 10px rgba(255,255,255,0.05),
+        0 0 30px rgba(255,255,255,0.03);
+
+    transition: 0.3s ease;
 }
 
 .sidebar ul {
@@ -300,18 +324,42 @@ body {
 
 .sidebar a {
     text-decoration: none;
-    color: #EAEAEA;
+    color: rgba(255,255,255,0.7);
 
     display: block;
-    padding: 10px;
-    border-radius: 6px;
+    padding: 10px 12px;
+    border-radius: 8px;
 
-    transition: 0.25s ease;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+
+    transition: all 0.25s ease;
 }
 
 .sidebar a:hover {
-    background: rgba(255,255,255,0.2);
-    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.08);
+    color: #FFFFFF;
+
+    transform: translateX(6px);
+
+    box-shadow: 0 0 10px rgba(255,255,255,0.15);
+}
+
+.sidebar a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #fff;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+}
+
+.sidebar a:hover::before {
+    transform: scaleY(1);
 }
 
 /* =========================
