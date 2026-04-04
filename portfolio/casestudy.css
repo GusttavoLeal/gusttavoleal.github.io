@@ -216,7 +216,7 @@ body {
 
 /* TITLES */
 .content h2 {
-    font-family: 'Orbitron';
+    font-family: 'Inter', sans-serif; /* Fonte disponível */
     font-size: 18px;
     letter-spacing: 1px;
     margin-bottom: 12px;
@@ -227,7 +227,35 @@ body {
 
     color: #FFFFFF;
 
-    text-shadow: 0 0 4px rgba(255,255,255,0.25);
+    /* Neon pulse */
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.5),
+        0 0 10px rgba(255, 255, 255, 0.4),
+        0 0 15px rgba(0, 255, 255, 0.3),
+        0 0 20px rgba(0, 255, 255, 0.2),
+        0 0 25px rgba(0, 255, 255, 0.1);
+    
+    animation: neonPulse 1.5s infinite alternate;
+}
+
+/* Animação para o efeito de pulso */
+@keyframes neonPulse {
+    0% {
+        text-shadow: 
+            0 0 5px rgba(255, 255, 255, 0.3),
+            0 0 10px rgba(255, 255, 255, 0.2),
+            0 0 15px rgba(0, 255, 255, 0.1),
+            0 0 20px rgba(0, 255, 255, 0.1),
+            0 0 25px rgba(0, 255, 255, 0.05);
+    }
+    100% {
+        text-shadow: 
+            0 0 10px rgba(255, 255, 255, 0.8),
+            0 0 20px rgba(255, 255, 255, 0.6),
+            0 0 25px rgba(0, 255, 255, 0.1),
+            0 0 30px rgba(0, 255, 255, 0.1),
+            0 0 35px rgba(0, 255, 255, 0.3);
+    }
 }
 
 /* TEXT */
