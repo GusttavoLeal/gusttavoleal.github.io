@@ -427,10 +427,10 @@ footer {
     position: relative;
     text-decoration: none;
     color: #EAEAEA;
-    font-size: 24px;
+    font-size: 23px;
 
-    width: 60px;
-    height: 60px;
+    width: 53px;
+    height: 53px;
 
     display: flex;
     align-items: center;
@@ -598,7 +598,7 @@ header {
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(255,255,255,0.08);
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 1px;
 
     display: inline-flex;

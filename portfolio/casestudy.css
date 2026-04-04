@@ -120,13 +120,12 @@ body {
 
 .project-actions .btn {
     text-decoration: none;
-    border: 1px solid rgba(255,255,255,0.25);
+    border: 1px solid rgba(255,255,255,0.2);
     color: #EAEAEA;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.05);
 
-    padding: 9px 16px;
+    padding: 10px 20px;
     border-radius: 8px;
-
     font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -135,23 +134,52 @@ body {
     align-items: center;
     gap: 8px;
 
-    transition: all 0.25s ease;
+    transition: all 0.3s ease;
+
+    /* Neon pulse contínuo mais intenso */
+    box-shadow: 0 0 6px rgba(255,255,255,0.2),
+                0 0 12px rgba(255,255,255,0.1);
+    animation: neonPulseContinuous 1.5s infinite alternate;
 }
 
-.project-actions .btn i {
-    font-size: 13px;
-    opacity: 0.85;
-    transition: 0.25s;
-}
-
+/* Hover: glow branco em letras e ícone */
 .project-actions .btn:hover {
+    background: rgba(255,255,255,0.1);
+    color: #FFFFFF;
+
+    box-shadow: 0 0 12px #fff,
+                0 0 24px #fff,
+                0 0 36px #fff,
+                0 0 48px #fff;
+
     transform: translateY(-2px);
-    background: rgba(255,255,255,0.2);
-    box-shadow: 0 0 12px rgba(255,255,255,0.4);
 }
 
+/* Ícone dentro do botão */
+.project-actions .btn i {
+    transition: all 0.3s ease;
+}
+
+/* Glow do ícone no hover */
 .project-actions .btn:hover i {
-    transform: scale(1.15);
+    filter: drop-shadow(0 0 10px #fff);
+    transform: scale(1.2);
+}
+
+/* Keyframes neon pulse contínuo mais forte */
+@keyframes neonPulseContinuous {
+    0% {
+        box-shadow: 0 0 6px rgba(255,255,255,0.2),
+                    0 0 12px rgba(255,255,255,0.1);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(255,255,255,0.35),
+                    0 0 20px rgba(255,255,255,0.2);
+    }
+    100% {
+        box-shadow: 0 0 6px rgba(255,255,255,0.2),
+                    0 0 12px rgba(255,255,255,0.1);
+    }
 }
 
 /* =========================
