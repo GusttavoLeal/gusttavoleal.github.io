@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Project Details • Link Bio Futuristic</title>
+<title>Case Study • Link Bio Futuristic</title>
 
 <link rel="icon" type="image/png" href="../portfolio/icons/h.png">
 
-<link rel="stylesheet" href="projectdetails.css">
+<link rel="stylesheet" href="casestudy.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -26,7 +26,7 @@
 
 <div class="container">
 
-    <h1 class="title">Project Details • Link Bio Futuristic</h1>
+    <h1 class="title">Case Study• Link Bio Futuristic</h1>
 
     <!-- HERO GALLERY -->
     <div class="hero-gallery">
@@ -48,7 +48,7 @@
     <!-- ACTION BUTTONS -->
     <div class="project-actions">
         <a href="https://gusttavoleal.github.io/link-in-bio-futuristic/" target="_blank" rel="noopener noreferrer" class="btn">
-            <i class="fas fa-satellite-dish"></i> Live Demo
+            <i class="fas fa-satellite-dish"></i> View Live
         </a>
 
         <a href="https://github.com/GusttavoLeal/link-in-bio-futuristic" target="_blank" rel="noopener noreferrer" class="btn">
@@ -59,6 +59,10 @@
     <div class="layout">
 
         <div class="content">
+
+            <a href="../index.html" class="back-btn">
+    <i class="fas fa-house"></i> Home
+</a>
 
             <section id="about">
                 <h2><i class="fas fa-user"></i> About</h2>
@@ -153,7 +157,16 @@
 <!-- LIGHTBOX -->
 <div id="lightbox">
     <span id="close-lightbox">&times;</span>
+
+    <button class="lightbox-nav left" id="lightbox-prev">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+
     <img id="lightbox-img">
+
+    <button class="lightbox-nav right" id="lightbox-next">
+        <i class="fas fa-chevron-right"></i>
+    </button>
 </div>
 
 <!-- CDN CORRETO (ANTES DO SCRIPT) -->
@@ -228,6 +241,8 @@ const nextBtn = document.getElementById("nextBtn");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const closeBtn = document.getElementById("close-lightbox");
+const lightboxPrev = document.getElementById("lightbox-prev");
+const lightboxNext = document.getElementById("lightbox-next");
 
 function updateImage() {
     galleryImg.src = images[currentIndex];
@@ -241,6 +256,16 @@ nextBtn.addEventListener("click", () => {
 prevBtn.addEventListener("click", () => {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     updateImage();
+});
+
+lightboxNext.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    lightboxImg.src = images[currentIndex];
+});
+
+lightboxPrev.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    lightboxImg.src = images[currentIndex];
 });
 
 galleryImg.addEventListener("click", () => {
