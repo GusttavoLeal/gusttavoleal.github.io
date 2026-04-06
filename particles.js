@@ -7,12 +7,12 @@ tsParticles.load("tsparticles", {
   },
 
   background: {
-    color: "#050505"
+    color: "#000000"
   },
 
   particles: {
     number: {
-      value: window.innerWidth < 768 ? 50 : 100,
+      value: Math.min(100, Math.max(40, window.innerWidth / 15)),
       density: {
         enable: true,
         area: 800
@@ -53,9 +53,7 @@ tsParticles.load("tsparticles", {
         default: "out"
       },
       parallax: {
-        enable: true,
-        force: 30,
-        smooth: 10
+        enable: false
       }
     }
   },
@@ -98,8 +96,6 @@ tsParticles.load("tsparticles", {
   particlesInstance = container;
 });
 
-
-// Scroll Effects
 let ticking = false;
 
 window.addEventListener("scroll", () => {
@@ -110,38 +106,20 @@ window.addEventListener("scroll", () => {
   requestAnimationFrame(() => {
     const scrollY = window.scrollY;
 
-    particlesInstance.options.particles.move.speed =
-      0.15 + scrollY * 0.00025;
-
-    particlesInstance.options.particles.opacity.value.max =
-      0.25 + scrollY * 0.00005;
-
-    particlesInstance.particles.refresh();
+    particlesInstance.loadOptions({
+      particles: {
+        move: {
+          speed: 0.15 + scrollY * 0.00025
+        },
+        opacity: {
+          value: {
+            min: 0.05,
+            max: 0.25 + scrollY * 0.00005
+          }
+        }
+      }
+    });
 
     ticking = false;
   });
 });
-
-
-// Dark / Light mode
-const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
-
-function updateTheme(e) {
-  if (!particlesInstance) return;
-
-  const isDark = e.matches;
-
-  particlesInstance.options.background.color =
-    isDark ? "#050505" : "#ffffff";
-
-  particlesInstance.options.particles.color.value =
-    isDark ? "#ffffff" : "#000000";
-
-  particlesInstance.options.particles.links.color =
-    isDark ? "#ffffff" : "#000000";
-
-  particlesInstance.particles.refresh();
-}
-
-prefersDark.addEventListener("change", updateTheme);
-updateTheme(prefersDark);
