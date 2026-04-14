@@ -1,15 +1,62 @@
-let particlesInstance;
+const isMobile = window.innerWidth <= 768;
 
-tsParticles.load("tsparticles", {
+const mobileConfig = {
   fullScreen: {
     enable: true,
     zIndex: -1
   },
-
   background: {
     color: "#000000"
   },
+  particles: {
+    number: {
+      value: 25
+    },
+    color: {
+      value: "#ffffff"
+    },
+    shape: {
+      type: "circle"
+    },
+    opacity: {
+      value: 0.15
+    },
+    size: {
+      value: { min: 0.5, max: 1.5 }
+    },
+    links: {
+      enable: false
+    },
+    move: {
+      enable: true,
+      speed: 0.08,
+      random: true,
+      outModes: {
+        default: "out"
+      }
+    }
+  },
+  interactivity: {
+    events: {
+      onHover: {
+        enable: false
+      },
+      onClick: {
+        enable: false
+      }
+    }
+  },
+  detectRetina: true
+};
 
+const desktopConfig = {
+  fullScreen: {
+    enable: true,
+    zIndex: -1
+  },
+  background: {
+    color: "#000000"
+  },
   particles: {
     number: {
       value: Math.min(100, Math.max(40, window.innerWidth / 15)),
@@ -18,23 +65,18 @@ tsParticles.load("tsparticles", {
         area: 800
       }
     },
-
     color: {
       value: "#ffffff"
     },
-
     shape: {
       type: "circle"
     },
-
     opacity: {
       value: { min: 0.05, max: 0.25 }
     },
-
     size: {
       value: { min: 0.5, max: 2 }
     },
-
     links: {
       enable: true,
       distance: 200,
@@ -42,22 +84,15 @@ tsParticles.load("tsparticles", {
       opacity: 0.3,
       width: 1.2
     },
-
     move: {
       enable: true,
       speed: 0.15,
-      direction: "none",
       random: true,
-      straight: false,
       outModes: {
         default: "out"
-      },
-      parallax: {
-        enable: false
       }
     }
   },
-
   interactivity: {
     events: {
       onHover: {
@@ -65,11 +100,9 @@ tsParticles.load("tsparticles", {
         mode: ["grab", "connect"]
       },
       onClick: {
-        enable: false,
-        mode: ["push"]
+        enable: false
       }
     },
-
     modes: {
       grab: {
         distance: 220,
@@ -77,49 +110,15 @@ tsParticles.load("tsparticles", {
           opacity: 0.7
         }
       },
-
       connect: {
         distance: 160,
         links: {
           opacity: 0.5
         }
-      },
-
-      push: {
-        quantity: 4
       }
     }
   },
-
   detectRetina: true
-}).then(container => {
-  particlesInstance = container;
-});
+};
 
-let ticking = false;
-
-window.addEventListener("scroll", () => {
-  if (!particlesInstance || ticking) return;
-
-  ticking = true;
-
-  requestAnimationFrame(() => {
-    const scrollY = window.scrollY;
-
-    particlesInstance.loadOptions({
-      particles: {
-        move: {
-          speed: 0.15 + scrollY * 0.00025
-        },
-        opacity: {
-          value: {
-            min: 0.05,
-            max: 0.25 + scrollY * 0.00005
-          }
-        }
-      }
-    });
-
-    ticking = false;
-  });
-});
+tsParticles.load("tsparticles", isMobile ? mobileConfig : desktopConfig);
