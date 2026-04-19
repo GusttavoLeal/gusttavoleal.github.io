@@ -1,53 +1,4 @@
-const isMobile = window.innerWidth <= 768;
-
-const mobileConfig = {
-  fullScreen: {
-    enable: true,
-    zIndex: -1
-  },
-  background: {
-    color: "#000000"
-  },
-  particles: {
-    number: {
-      value: 25
-    },
-    color: {
-      value: "#ffffff"
-    },
-    shape: {
-      type: "circle"
-    },
-    opacity: {
-      value: 0.15
-    },
-    size: {
-      value: { min: 0.5, max: 1.5 }
-    },
-    links: {
-      enable: false
-    },
-    move: {
-      enable: true,
-      speed: 0.08,
-      random: true,
-      outModes: {
-        default: "out"
-      }
-    }
-  },
-  interactivity: {
-    events: {
-      onHover: {
-        enable: false
-      },
-      onClick: {
-        enable: false
-      }
-    }
-  },
-  detectRetina: true
-};
+const isMobile = window.matchMedia("(pointer: coarse)").matches;
 
 const desktopConfig = {
   fullScreen: {
@@ -121,4 +72,7 @@ const desktopConfig = {
   detectRetina: true
 };
 
-tsParticles.load("tsparticles", isMobile ? mobileConfig : desktopConfig);
+// mobile: não carrega partículas para melhorar desempenho
+if (!isMobile) {
+  tsParticles.load("tsparticles", desktopConfig);
+}
