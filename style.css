@@ -6,7 +6,12 @@
 }
 
 body {
-  background: #050505;
+  background: radial-gradient(
+    circle at top,
+    #0a0a0a,
+    #050505 60%,
+    #000000 100%
+  );
   color: #EAEAEA;
   font-family: 'Inter', sans-serif;
 }
@@ -865,4 +870,15 @@ h2::after {
     100% {
         left: 150%;
     }
+}
+
+
+@media (max-width: 768px) {
+  .blur-blob {
+    display: none;
+  }
+
+  #tsparticles {
+    display: none;
+  }
 }
