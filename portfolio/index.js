@@ -2,8 +2,8 @@ const button = document.getElementById("toggleAudio")
 const audio = document.getElementById("bgAudio")
 
 const playlist = [
-  "music/all.mp3",
-  "music/dark.mp3",
+  "audio/track1.mp3",
+  "audio/track2.mp3",
   "audio/track3.mp3",
   "audio/track4.mp3",
   "audio/track5.mp3",
