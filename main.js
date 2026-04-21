@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const prevBtn = document.querySelector("#lightbox .prev");
     const nextBtn = document.querySelector("#lightbox .next");
 
-    const images = document.querySelectorAll(".project-images img");
+    const images = document.querySelectorAll(".project-images .carousel-track img");
 
     let currentIndex = 0;
     let currentGroup = [];
@@ -97,3 +97,37 @@ buttons.forEach(btn => {
         btn.style.transform = "translate(0,0)";
     });
 });
+
+
+
+document.querySelectorAll('.carousel').forEach(carousel => {
+    const track = carousel.querySelector('.carousel-track')
+    const images = track.querySelectorAll('img')
+    const prev = carousel.querySelector('.carousel-btn.prev')
+    const next = carousel.querySelector('.carousel-btn.next')
+
+    let index = 0
+
+    function update() {
+        track.style.transform = `translateX(-${index * 100}%)`
+        images.forEach(img => img.classList.remove('active'))
+        images[index].classList.add('active')
+    }
+
+    next.addEventListener('click', e => {
+        e.stopPropagation()
+        index = (index + 1) % images.length
+        update()
+    })
+
+    prev.addEventListener('click', e => {
+        e.stopPropagation()
+        index = (index - 1 + images.length) % images.length
+        update()
+    })
+
+    setInterval(() => {
+        index = (index + 1) % images.length
+        update()
+    }, 4000)
+})

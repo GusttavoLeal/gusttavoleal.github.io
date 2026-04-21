@@ -315,12 +315,6 @@ h2 {
     gap: 50px;
 }
 
-.project-images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-}
-
 .project-images img {
     width: 100%;
     cursor: pointer;
@@ -880,5 +874,66 @@ h2::after {
 
   #tsparticles {
     display: none;
+  }
+}
+
+
+
+.project-images {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+.carousel-track img {
+  min-width: 100%;
+  height: clamp(250px, 40vw, 500px);
+  object-fit: contain;
+}
+
+.carousel-track img.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.carousel-track img.active:hover {
+  transform: scale(1.03);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 22px;
+  padding: 10px 14px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  transition: all 0.25s ease;
+}
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
+.carousel-btn:hover {
+  background: rgba(255,255,255,0.1);
+  box-shadow:
+    0 0 15px rgba(255,255,255,0.3),
+    0 0 25px rgba(255,255,255,0.2);
+}
+
+@media (max-width: 768px) {
+  .carousel-track img {
+    height: 220px;
   }
 }
