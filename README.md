@@ -330,6 +330,6 @@ Este projeto foi desenvolvido para fins de apresentação profissional e demonst
 
 ---
 
-<p align="center">
+### <p align="center">
   Desenvolvido por <strong>Gustavo Leal</strong> — Full Stack Developer
 </p>
