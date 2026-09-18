@@ -1,142 +1,335 @@
 # Gustavo Leal — Full Stack Developer Portfolio
 
-Welcome to my professional portfolio! This repository showcases my expertise as a Full Stack Developer, with a strong focus on modern web technologies, robust architecture, and visually compelling user experiences. Every project here is crafted to demonstrate not only technical proficiency but also a deep understanding of business needs and software scalability.
+Portfólio profissional desenvolvido para apresentar minha trajetória como **Full Stack Developer**, projetos, habilidades técnicas e experiência com desenvolvimento web.
+
+O projeto foi desenvolvido com foco em **desenvolvimento Front-End e Back-End, design moderno, responsividade, organização de código, performance e experiência do usuário**, reunindo projetos práticos que demonstram minha evolução e aplicação de tecnologias do ecossistema web.
 
 ---
 
-##  About Me
+## Sobre o Projeto
 
-I am a passionate Full Stack Developer dedicated to building scalable, high-performance web applications. My approach combines clean code, best practices, and a relentless pursuit of technical excellence. I thrive on solving complex problems, architecting maintainable systems, and delivering real business value through software.
+Este portfólio funciona como uma apresentação profissional do meu trabalho como **Full Stack Developer**, reunindo informações sobre minha formação, habilidades, tecnologias utilizadas e projetos desenvolvidos.
 
-- **Focus:** Code quality, architecture, scalability, and user experience
-- **Mindset:** Business-driven, detail-oriented, and always learning
-- **Goal:** Deliver impactful solutions and continuously evolve as a developer
+A estrutura foi planejada para proporcionar uma navegação simples e objetiva, permitindo que recrutadores, empresas e clientes conheçam meu perfil profissional e tenham acesso aos projetos apresentados.
 
----
+### Principais objetivos
 
-##  Tech Stack
-
-**Languages:**
-- HTML5, CSS3, JavaScript, TypeScript
-
-**Frontend:**
-- React, Next.js
-
-**Backend:**
-- Node.js, Express
-
-**Database:**
-- PostgreSQL
-
-**ORM:**
-- Prisma
-
-**DevOps:**
-- Docker
-
-**Other:**
-- Responsive Design, UI/UX, Animations, Particles.js
+* Apresentar meu perfil profissional como Full Stack Developer
+* Demonstrar conhecimentos em desenvolvimento Front-End e Back-End
+* Centralizar meus principais projetos e experiências práticas
+* Disponibilizar informações sobre minha stack tecnológica
+* Facilitar o acesso ao GitHub, currículo e demais canais profissionais
+* Demonstrar conhecimentos de UI, responsividade e desenvolvimento de interfaces modernas
 
 ---
 
-##  Highlights & Differentials
-- **Modern UI/UX:** Advanced design with animations, particle backgrounds, and responsive layouts
-- **Scalable Architecture:** Clean, modular codebase ready for growth
-- **Business Focus:** Solutions designed to create real value, not just features
-- **Technical Depth:** Mastery of both front-end and back-end technologies
-- **Continuous Learning:** Always up-to-date with the latest trends and best practices
+## Sobre Mim
+
+Sou **Full Stack Developer** com conhecimentos em desenvolvimento **Front-End e Back-End**, buscando construir aplicações web modernas, organizadas, funcionais e orientadas à experiência do usuário.
+
+Tenho especial interesse pelo desenvolvimento Front-End, trabalhando com tecnologias modernas para criação de interfaces responsivas e interativas, enquanto também atuo no desenvolvimento Back-End, APIs, bancos de dados e integração entre diferentes camadas de uma aplicação.
+
+Minha abordagem de desenvolvimento prioriza:
+
+* Código limpo e organizado
+* Estrutura modular
+* Responsividade
+* Experiência do usuário
+* Performance
+* Manutenibilidade
+* Boas práticas de desenvolvimento
+* Aprendizado contínuo
 
 ---
 
-##  Project Structure
+## Stack Tecnológica
 
-The project follows a modular structure focused on organization, scalability, and maintainability.
+### Linguagens
 
-```
+* HTML5
+* CSS3
+* JavaScript
+* TypeScript
+
+### Front-End
+
+* React
+* Next.js
+* Responsive Design
+* UI Development
+* CSS Flexbox
+* CSS Grid
+* Animações e interações
+
+### Back-End
+
+* Node.js
+* Express
+* REST APIs
+
+### Banco de Dados
+
+* PostgreSQL
+
+### ORM
+
+* Prisma
+
+### DevOps e Ambiente
+
+* Docker
+
+### Ferramentas e Tecnologias Complementares
+
+* Git
+* GitHub
+* Figma
+* Particles.js
+* Desenvolvimento responsivo
+* Lightbox e galerias de projetos
+
+---
+
+## Funcionalidades
+
+O portfólio conta com recursos desenvolvidos para melhorar a navegação e apresentação dos projetos.
+
+### Interface
+
+* Design moderno e minimalista
+* Tema visual escuro
+* Layout responsivo
+* Adaptação para diferentes tamanhos de tela
+* Seções organizadas para apresentação profissional
+* Interface focada em legibilidade e navegação
+
+### Interações
+
+* Animações de interface
+* Efeitos visuais
+* Background com partículas
+* Galeria de projetos
+* Lightbox para visualização de imagens
+* Elementos interativos de navegação
+
+### Projetos
+
+O portfólio apresenta meus principais projetos e trabalhos desenvolvidos, destacando suas propostas, tecnologias utilizadas e resultados visuais e funcionais.
+
+---
+
+## Estrutura do Projeto
+
+O projeto possui uma estrutura simples e organizada, separando arquivos de apresentação, estilos, lógica e recursos visuais.
+
+```text
 project-root/
 │
-├── index.html          # Main entry point
-├── README.md           # Project documentation
+├── index.html
+├── README.md
 │
 ├── css/
-│   └── style.css       # Styles, layout, animations, responsive design
+│   └── style.css
 │
 ├── js/
-│   ├── main.js         # UI logic, DOM manipulation, gallery, lightbox
-│   └── particles.js    # Background particle animation
+│   ├── main.js
+│   └── particles.js
 │
-├── portfolio/          # Case study pages for each project
+├── portfolio/
+│   └── páginas e informações dos projetos
 │
-└── imagens/            # Images, icons, assets, screenshots, resume
+└── imagens/
+    ├── projetos
+    ├── ícones
+    ├── imagens de perfil
+    └── currículo
 ```
 
 ---
 
-##  Architecture Overview
+## Organização
 
-### Root
+### `index.html`
 
-* **index.html** — Main portfolio structure and sections
-* **README.md** — Project documentation
+Arquivo principal responsável pela estrutura e organização das seções do portfólio.
 
-### /css
+### `css/`
 
-Contains all styling files:
+Responsável pela camada visual da aplicação, incluindo:
 
 * Layout
-* Animations
-* Responsive design
-* Mobile-first approach
+* Tipografia
+* Responsividade
+* Componentes visuais
+* Animações
+* Efeitos de interface
 
-### /js
+### `js/`
 
-Contains all JavaScript logic:
+Contém a lógica responsável pelas interações e comportamentos da interface.
 
-* Interface interactions
-* Project gallery
+Entre suas responsabilidades estão:
+
+* Manipulação do DOM
+* Interações da interface
+* Galeria de projetos
 * Lightbox
-* Animations
-* DOM manipulation
-* Background particles
+* Animações
+* Efeitos visuais
+* Sistema de partículas
 
-### /portfolio
+### `portfolio/`
 
-This folder contains detailed case studies for each project, including:
+Contém as páginas e informações dos projetos apresentados no portfólio.
 
-* Project overview
-* Problem description
-* Technologies used
-* Development process
-* Challenges
-* Results / Final solution
-* Screenshots
+Cada projeto apresenta informações relevantes sobre sua proposta, tecnologias utilizadas e implementação.
 
-### /imagens
+### `imagens/`
 
-Stores all visual assets:
+Diretório destinado aos recursos visuais utilizados pelo projeto, incluindo:
 
-* Project screenshots
-* Icons
-* Profile images
-* Resume
-* UI assets
-
-
+* Imagens dos projetos
+* Capturas de tela
+* Ícones
+* Imagens de perfil
+* Recursos da interface
+* Currículo
 
 ---
 
-##  Contributing
+## Desenvolvimento
 
-Contributions are welcome! If you have suggestions, ideas, or want to collaborate, feel free to open an issue or submit a pull request.
+O projeto foi desenvolvido utilizando tecnologias fundamentais do desenvolvimento web, com uma estrutura organizada para facilitar manutenção e evolução.
+
+A implementação busca manter uma separação clara entre **estrutura, apresentação e comportamento**, permitindo que diferentes partes do projeto sejam modificadas e aprimoradas de forma organizada.
+
+Também foram considerados aspectos como:
+
+* Organização de arquivos
+* Reutilização de código
+* Responsividade
+* Consistência visual
+* Experiência de navegação
+* Manutenção futura
+* Compatibilidade com diferentes dispositivos
 
 ---
 
-##  Contact
-- [GitHub](https://github.com/GusttavoLeal)
-- [WhatsApp](https://wa.me/5531999460225)
-- [Discord](https://discord.com/users/1204551778981519401)
+## Responsividade
 
+O portfólio foi desenvolvido para proporcionar uma experiência consistente em diferentes dispositivos.
+
+A interface se adapta a diferentes resoluções, incluindo:
+
+* Desktop
+* Notebook
+* Tablet
+* Smartphone
+
+A utilização de CSS Flexbox, CSS Grid e técnicas de design responsivo permite adaptar a estrutura dos componentes conforme o tamanho da tela.
 
 ---
 
-## Engineered and designed by Gustavo Leal — Full Stack Developer.
+## Experiência do Usuário
+
+A interface foi projetada para apresentar as informações de forma objetiva, mantendo uma identidade visual consistente em todas as seções.
+
+Entre os principais pontos considerados estão:
+
+* Hierarquia visual
+* Legibilidade
+* Organização das informações
+* Navegação intuitiva
+* Feedback visual através de animações
+* Apresentação clara dos projetos
+* Adaptação para dispositivos móveis
+
+---
+
+## Projetos
+
+O portfólio reúne projetos desenvolvidos durante minha formação e prática profissional em desenvolvimento web.
+
+Os projetos abrangem diferentes áreas do desenvolvimento, incluindo:
+
+* Desenvolvimento de interfaces
+* Aplicações web
+* APIs REST
+* Integração com bancos de dados
+* E-commerce
+* Sistemas interativos
+* Projetos experimentais
+
+Cada projeto representa uma aplicação prática dos conhecimentos adquiridos em desenvolvimento Front-End e Back-End.
+
+---
+
+## Evolução Profissional
+
+Este portfólio também funciona como um espaço contínuo de evolução profissional, reunindo projetos que representam diferentes etapas do meu desenvolvimento como Full Stack Developer.
+
+Meu objetivo é continuar aprimorando conhecimentos em:
+
+* Arquitetura de aplicações
+* Desenvolvimento Back-End
+* Desenvolvimento Front-End
+* APIs e integrações
+* Bancos de dados
+* Performance
+* Acessibilidade
+* DevOps
+* Boas práticas de engenharia de software
+
+---
+
+## Como Executar Localmente
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/GusttavoLeal/gustavoleal.git
+```
+
+Acesse o diretório:
+
+```bash
+cd gustavoleal
+```
+
+Como o projeto utiliza HTML, CSS e JavaScript, ele pode ser executado diretamente no navegador ou através de uma extensão como o **Live Server** no Visual Studio Code.
+
+---
+
+## Deploy
+
+**Portfolio:**
+https://gustavoleal.vercel.app/
+
+**GitHub:**
+https://github.com/GusttavoLeal
+
+---
+
+## Links Profissionais
+
+* **Portfolio:** https://gustavoleal.vercel.app/
+* **GitHub:** https://github.com/GusttavoLeal
+* **LinkedIn:** https://www.linkedin.com/in/gusttavoleal/
+
+---
+
+## Contato
+
+Para oportunidades profissionais, projetos ou trabalhos freelance, entre em contato através dos canais disponíveis no portfólio.
+
+---
+
+## Licença
+
+Este projeto foi desenvolvido para fins de apresentação profissional e demonstração de conhecimentos em desenvolvimento web.
+
+---
+
+<p align="center">
+  Desenvolvido por <strong>Gustavo Leal</strong> — Full Stack Developer
+</p>
