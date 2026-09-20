@@ -128,7 +128,7 @@ body {
     border-radius: 8px;
     font-size: 12px;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: none;
 
     display: flex;
     align-items: center;
@@ -490,7 +490,7 @@ html, body {
 
     font-size: 13px;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: none;
 
     transition: all 0.25s ease;
 }
